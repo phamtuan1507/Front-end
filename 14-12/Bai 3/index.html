@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-8/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+  
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="wrapper-logo">
+            <a href="#">Papermag</a>
+            <span>MAGAZINE</span>
+        </div>
+        <div class="wrapper-icon">
+            <a><i class="fab fa-facebook-f"></i></a>
+            <a><i class="fab fa-twitter"></i></a>
+            <a><i class="fab fa-instagram"></i></a>
+            <a><i class="fas fa-volleyball-ball"></i></a>
+        </div>
+    </div>
+
+    <div class="wrapper-bot">
+        <nav class="wrapper-menu">
+            <ul class="wrapper-menu-1">
+                <a class="menu-small" href="javascript:void(0);" onclick="onClicktexthome()" id="text-home">
+                    <div onclick="onClickResponse()">
+                        <i class="fas fa-list" ></i> MENU
+                    </div>
+                </a>
+                <li><a href="" class="menu-item">HOME</a></li>
+                <li class="dropdown-item">
+                    <a href="" class="menu-item">PAGE <i class="fas fa-caret-down"></i></a>
+                    <ul class="menu-child-1">
+                        <li><a href="#" class="menu-item">Item 1</a></li>
+                        <li><a href="#" class="menu-item">Item 2</a></li>
+                        <li><a href="#" class="menu-item">Item 3</a></li>
+                        <li><a href="#" class="menu-item">Item 4</a></li>
+                    </ul>
+                </li>
+                <li><a href="" class="menu-item">WORK</a></li>
+                <li><a href="" class="menu-item">BLOG</a></li>
+                <li><a href="" class="menu-item">CONTACT</a></li>
+            </ul>
+        </nav>
+        <div class="wrapper-search">
+            <input type="text" name="" placeholder="Search">
+            <button>
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+    </div>
+    <script>
+        function onClickResponse() {
+    var menu_item = document.getElementsByClassName("menu-item");
+    for(var i = 0;i < menu_item.length; i++)
+    {
+        // console.log(i);
+        menu_item[i].className = menu_item[i].className + " text-red";
+    }
+}
+    </script>
+</body>
+
+</html>

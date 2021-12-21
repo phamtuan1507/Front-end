@@ -1,0 +1,115 @@
+*{
+    padding:0 ;
+    margin: 0;
+    font-family: sans-serif;
+}
+.wrapper{
+    width: 100%;
+    height: 150vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form-header {
+    display: flex;
+    justify-content: center;
+}
+.form-login{
+    width: 30%;
+    padding:30px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    background: whitesmoke;
+}
+.form-input {
+    position: relative;
+}
+.form-input i {
+    position: absolute;
+    top : 40px;
+    left: 10px;
+    color: rgb(172, 165, 165);
+}
+.form-input input {
+    padding: 10px 10px 10px 30px;
+    width: calc(100% - 40px - 2px);
+    outline: none;
+    margin: 10px 0;
+    border : 1px solid transparent;
+    background-color: transparent;
+    border-bottom-color:rgb(160, 155, 155) ;
+    color: rgb(19, 15, 15);
+}
+.form-forgot{
+    display: flex;
+    justify-content: right;
+    margin-bottom: 20px;
+}
+.form-forgot a{
+    text-decoration: none;
+}
+.div-button {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.div-button button{
+    width: 400px;
+    height: 40px;
+    background-color: rgb(62, 132, 153);
+    color: #f7f2f2;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    transition: .5s;
+}
+
+button:hover {
+    background: linear-gradient( #b475ac, #7b5fc7,#2861ca);
+    color: #fff;
+}
+.div-up {
+
+    text-align: center;
+    margin : 10px 10px;
+}
+ 
+.div-icon {
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    
+}
+.div-icon a{
+    margin-top: 30px;
+    padding: 10px 2px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    transition: .5s;
+    
+}
+.div-icon a i {
+    margin: 10px 15px;
+    height: 30px;
+}
+.div-icon-fb {
+    background-color: #3b5998;
+    color: #fff;
+}
+.div-icon-tw {
+    background-color: #1da1f2;
+    color: #fff;
+}
+.div-icon-gg {
+    background-color: #ea4335;
+    color: #fff;
+}
+.div-up-1 {
+    text-align: center;
+}
+.footer a {
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+}

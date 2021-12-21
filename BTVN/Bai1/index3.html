@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style2.css">
+    <title>Register</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="form">
+            <div class="inputfield">
+                <span> * </span>
+                <label>Quốc Gia </label>
+                <div class="custom_select">
+                  <select>
+                    <option value="">Việt Nam</option>
+                    <option value="">Thái Lan</option>
+                    <option value="">Lào</option>
+                  </select>
+                </div>
+             </div> 
+          
+            <div class="inputfield">
+                <span> * </span>
+              <label>Vai trò giao dịch</label>
+              <div>
+                <input type="radio">
+                <label>Buyer</label>
+              </div>
+              <div>
+                <input type="radio">
+                <label>Seller</label>
+              </div>
+              <div>
+                <input type="radio">
+                <label>Both</label>
+              </div>
+              <p id="result"></p>
+           </div>  
+           <div class="inputfield">
+              <span> * </span>
+              <label>Địa chỉ email</label>
+              <input type="email" class="input" id="text-email" placeholder="Vui lòng đặt email làm tên  đăng nhập" required>
+              <p id="result-email"></p>
+           </div>  
+          <div class="inputfield">
+              <span> * </span>
+              <label>Mật khẩu đăng nhập</label>
+              <input type="password" class="input" id="text-password" placeholder="Vui lòng đặt mật khẩu đăng nhập" required>
+              <p id="result-password"></p>
+            </div> 
+           <div class="inputfield">
+            <span> * </span>
+            <label>Xác nhận mật khẩu</label>
+            <input type="password" class="input" id="text-password-1" placeholder="Vui lòng nhập lại mật khẩu" required>
+            <p id="result-password-1"></p>
+          </div>  
+            <div class="inputfield">
+                <span> * </span>
+              <label>Tên công ty</label>
+              <input type="text" class="input" id="text-company" placeholder="Phải là một công ty đã đăng ký hợp pháp" result>
+              <p id="result-company"></p>
+            </div> 
+          <div class="inputfield">
+            <span> * </span>
+              <label>Họ và tên</label>
+              <input type="text" class="input" placeholder="Tên của bạn" required>
+              <input type="text" class="input" id="text-name" placeholder="Họ của bạn" required>
+              <p id="result-name"></p>
+           </div> 
+          <div class="inputfield">
+            <span> * </span>
+              <label>Điện thoại</label>
+              <input type="text" class="input" id="text-number" placeholder="84"required>
+              <input type="text" class="input" placeholder="Khu vực"required>
+              <input type="text" class="input" placeholder="SDT"required>
+              <p id="result-number"></p>
+           </div> 
+          <div class="inputfield">
+            <span> * </span>
+              <label>Xác minh</label>
+              <input type="text" class="input" id="text-xacminh" placeholder="Vui lòng trượt để xác minh"required>
+              <p id="result-xacminh"></p>
+            </div> 
+          <div class="inputfield terms">
+              <label class="check">
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+              <p>Trong khi tạo tài khoản trang web: Tôi đồng ý tuân theo Thỏa thuận thành viên Alibaba.com - Sẵn sàng nhận email từ các thành viên và dịch vụ của Alibaba.com</p>
+           </div> 
+          <div class="inputfield">
+            <button class="btn" id="btn-click" onclick="OnClickButtonClick()">Đăng ký</button>
+          </div>
+        </div>
+    </div>
+    <p id="result-email"></p>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+    function OnClickButtonClick(){
+      var input_email = document.getElementById("text-email").value;
+      var result_email = document.getElementById("result-email");
+      result_email.innerHTML = input_email;
+      var regex = /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/;
+            
+            if (regex.test(input_email)){
+                result_email.innerHTML = " ";
+            }else {
+                result_email.innerText = " Sai định dạng";
+            }
+      
+            var text_password = document.getElementById("text-password").value;
+            var result_password = document.getElementById("result-password");
+            // result_password.innerHTML = input_password;
+            if (text_password.leght > 6) {
+                result_password.innerHTML = input_password;
+            }else {
+                result_password.innerHTML = "Mật khẩu dưới 6 kí tự";
+            }
+
+            var text_password_1 = document.getElementById("text-password-1").value;
+            var result_password_1 = document.getElementById("result-password-1");
+            // result_password.innerHTML = input_password;
+            if (text_password_1.leght > 6) {
+                result_password_1.innerHTML = input_password_1;
+            }else {
+                result_password_1.innerHTML = "Mật khẩu dưới 6 kí tự";
+            }
+
+
+            var text_company = document.getElementById("text-company").value;
+            var result_company = document.getElementById("result-company");
+            result_password.innerHTML = text_company;
+
+            if (regex.test(text_company)){
+                result_company.innerHTML = " ";
+            }else {
+                result_company.innerText = " Nhập tên công ty";
+            }
+
+            var text_name = document.getElementById("text-name").value;
+            var result_name = document.getElementById("result-name");
+            result_name.innerHTML = text_name;
+
+            if (regex.test(text_name)){
+                result_name.innerHTML = " ";
+            }else {
+                result_name.innerText = " Nhập họ và tên của bạn";
+            }
+
+            var text_number = document.getElementById("text-number").value;
+            var result_number = document.getElementById("result-number");
+            result_name.innerHTML = text_number;
+
+            if (regex.test(text_name)){
+                result_number.innerHTML = " ";
+            }else {
+                result_number.innerText = " Vui lòng nhập số điện thoại";
+            }
+
+            var text_xacminh = document.getElementById("text-xacminh").value;
+            var result_xacminh = document.getElementById("result-xacminh");
+            result_xacminh.innerHTML = text_xacminh;
+
+            if (regex.test(text_xacminh)){
+                result_xacminh.innerHTML = " ";
+            }else {
+                result_xacminh.innerText = " Vui lòng xác minh";
+            }
+    }
+     
+    </script>
+    
+
+</body>
+</html>

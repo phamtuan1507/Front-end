@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-8/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="form-wrapper">
+            <div class="wrapper-logo">
+                <a href="#">DIGITAL</a>
+            </div>
+            <div id="header">
+                <nav>
+                    <ul id="main-menu">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Work</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="wrapper-icon">
+                <a><i class="fab fa-facebook-f"></i></a>
+                <a><i class="fab fa-twitter"></i></a>
+                <a><i class="fab fa-instagram"></i></a>
+                <a><i class="fas fa-volleyball-ball"></i></a>
+            </div>
+            <div id="toggle">
+                <i class="fas fa-list"> MENU</i>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $('#toggle').click(function () {
+                $('#main-menu').slideToggle();
+            })
+        });
+    </script>
+</body>
+
+</html>

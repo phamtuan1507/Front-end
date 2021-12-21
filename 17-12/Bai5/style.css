@@ -1,0 +1,18 @@
+.item-navigation ul li {
+    padding: 0 50px;
+}
+.item-navigation ul li a { 
+    line-height:70px;
+    font-size: 17px;
+}
+
+.new img {
+    width:100%;
+    margin-bottom: 5px;
+}
+.new h3 {
+    font-size:15px;
+}
+.new p a {
+    font-size:13px;
+}

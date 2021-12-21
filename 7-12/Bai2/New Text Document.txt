@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+nav {
+    width:  70%;
+}
+nav ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.menu-parent {
+    display: flex;
+    background-color: #1089ff;
+}
+
+.menu-parent li {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-parent a {
+    width: 100%;
+    padding: 10px 30px;
+    color: #fff;
+}
+
+.menu-parent a i {
+    font-size: 10px;
+    margin-left: 5px;
+}
+
+
+.dropdown-item {
+    position: relative;
+}
+
+.dropdown-item:hover .menu-child-1 {
+    display: block;
+}
+
+.menu-child-1 {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color:red;
+    display: none;
+}
+
+.menu-child-1 a {
+    color: black;
+}
+
+
+.menu {
+    background-color: #1089ff;
+    padding: 0 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* .menu {
+    width: 50%;
+}
+
+.menu ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.menu-parent {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-parent li {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+
+}
+
+.menu-parent a {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+}
+
+.menu-parent a:hover {
+    background-color: blue;
+}
+
+.fa-chevron-down {
+    margin-left: 5px;
+    font-size: 10px;
+}
+
+.dropdown-item {
+    position: relative;
+}
+
+.dropdown-item:hover .menu-child-1 {
+    display: block;
+}
+
+.menu-child-1 {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+}
+
+.dropdown-item-2 {
+    position: relative;
+}
+
+.dropdown-item-2:hover .menu-child-2 {
+    display: block;
+}
+
+.menu-child-2 {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    width: 100%;
+} */
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="../css/index4.css">
+</head>
+
+<body>
+    <!-- <div class="wrapper">
+        <nav class="menu">
+            <ul class="menu-parent">
+                <li><a href="#">Home</a></li>
+                <li class="dropdown-item">
+                    <a href="#">About Us<i class="fas fa-chevron-down"></i></a>
+                    <ul class="menu-child-1">
+                        <li><a href="#">Item 1</a></li>
+                        <li><a href="#">Item 2</a></li>
+                        <li class="dropdown-item-2">
+                            <a href="#">Item 3</a>
+                            <ul class="menu-child-2">
+                                <li><a href="#">Item 1</a></li>
+                                <li><a href="#">Item 2</a></li>
+                                <li><a href="#">Item 3</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </div> -->
+
+    <div class="menu">
+        <div class="logo">
+            Logo
+        </div>
+        <nav>
+            <ul class="menu-parent">
+                <li><a href="#">Home</a></li>
+                <li class="dropdown-item">
+                    <a href="#">Page <i class="fas fa-chevron-down"></i></a>
+                    <ul class="menu-child-1">
+                        <li><a href="#">Item 1</a></li>
+                        <li><a href="#">Item 2</a></li>
+                        <li><a href="#">Item 3</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Book a table</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+</body>

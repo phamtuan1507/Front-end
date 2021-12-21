@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="text-a" placeholder="Nhập cạnh a ">
+    <input type="text" id="text-b" placeholder="Nhập cạnh b ">
+    <input type="text" id="text-c" placeholder="Nhập cạnh c ">
+    <p id="result"></p>
+    <button onclick="onClickEnter()">Enter</button>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script>
+        function onClickEnter () {
+            var a = document.getElementById("text-a").value;
+            var b = document.getElementById("text-b").value;
+            var c = document.getElementById("text-c").value;
+
+            if(a==b && b==c) {
+                result.innerHTML = " Đây là tam giác đều";
+            }else if (a*a + b*b == c*c || c*c + a*a == b*b || b*b + c*c == a*a) {
+                result.innerHTML = " Đây là tam giác vuông";
+            }else if (a == b || b==c || a==c ){
+                result.innerHTML = "Đây là tam giác cân";
+            }else if(a*a > b*b+c*c || b*b > a*a+c*c || c*c > a*a+b*b) {
+                result.innerHTML = " Đây là tam giác tù";
+            }else if (a<b+c && b<a+c && c<a+b){
+                result.innerHTML = "Không phải là tam giác";
+            }
+            else{
+                result.innerHTML = " Đây là tam giác thường";
+            }
+        }
+        
+
+        
+    </script>
+</body>
+</html>

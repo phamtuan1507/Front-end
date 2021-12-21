@@ -1,0 +1,25 @@
+div {
+    width: 20%;
+    height: 300px;
+    position: relative;
+}
+
+button {
+    position: absolute;
+    right: 1px;
+    top: 1px;
+    padding: 10px;
+    background-color: transparent;
+    border: 1px solid transparent;
+    color: #fff;
+}
+
+input {
+    width: calc(100% - 10px - 40px - 4px);
+    padding: 10px 40px 10px 10px;
+    outline: none;
+    border: 1px solid transparent;
+    background-color: #1089ff;
+    border-radius: 5px;
+    color: #fff;
+}

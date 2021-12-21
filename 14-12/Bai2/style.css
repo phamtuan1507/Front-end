@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+span {
+    padding: 10px 20px;
+    border: 1px solid black;
+}
+div {
+    margin: 30px;
+}
+p{
+    font-size :20px;
+}

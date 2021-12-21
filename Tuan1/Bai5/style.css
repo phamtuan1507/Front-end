@@ -1,0 +1,50 @@
+.container {}
+
+.box {
+    border: 1px solid red;
+    border-radius: 4px;
+    margin: 5px;
+}
+
+.container_header {
+    width: 100%;
+    display: flex;
+}
+
+.container_padding {
+    padding: 0 20px 0 20px;
+    display: flex;
+}
+
+.container_box {
+    display: flex;
+}
+
+.container_box1 {
+    width: 100%;
+}
+
+.container_padding_left {
+    width: 70%;
+    height: 200px;
+}
+
+.container_padding_right {
+    width: 30%;
+}
+
+.container_padding_right1 {
+    height: 112px;
+}
+
+.container_footer {
+    display: flex;
+}
+
+.container_footer_left {
+    width: 30%;
+}
+
+.container_footer_right {
+    width: 70%;
+}

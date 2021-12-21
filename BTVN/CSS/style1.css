@@ -1,0 +1,131 @@
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    font-family: sans-serif;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+}
+.form-wrapper {
+    background: rgb(133, 129, 133);
+    border-radius: 4px;
+}
+.top-content {
+    font-size: 20px;
+}
+.top-content p {
+    font-style: normal;
+}
+
+.form-input {
+    padding: 10px 20px;
+    border :1px solid rgb(245, 245, 245);
+    border-radius:4px ;
+    margin: 2px;
+    width: 400px;
+    margin-top: 20px;
+    
+}
+.form-input:focus {
+    outline: none;
+    border-color: rgb(64, 84, 170);
+}
+.form-email {
+    padding-top: 24px;
+}
+.form-email a {
+    text-decoration: none;
+    color: darkblue;
+    
+}
+.form-text {
+    padding: 10px 20px;
+    border-radius:4px ;
+    margin: 2px;
+    width: 400px;
+    margin-top: 20px;
+    text-align: left;
+}
+.bottom-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    width: 400px;
+}
+.bottom-content select {
+    
+    border: 1px solid transparent;
+}
+.bottom-content a {
+    text-decoration: none;
+    margin: 0 5px;
+    color: #757575;
+    font-size: 13px;
+}
+.bottom-content a:hover {
+    background-color: whitesmoke;
+}
+.bottom-button {
+    padding: 10px 20px;
+    border-radius:4px ;
+    margin: 2px;
+    width: 400px;
+    text-align: center;
+}
+.btn {
+    padding: 10px 24px ;
+    border: 1px solid transparent;
+    font-weight: 600;
+    font-size: 0.875rem;
+    border-radius:4px ;
+    cursor: pointer;
+    width: 410px;
+}
+.btn-next {
+    background-color: rgba(0, 0, 255, 0.644);
+    color: #fff;
+    border: 1px solid transparent;
+    transition: .5s;
+}
+.btn-next:hover{
+    background-color: rgb(245, 162, 9);
+}
+.btn-login {
+    background-color: whitesmoke;
+    color: rgba(0, 0, 0, 0.315);
+    border: 1px solid transparent;
+    transition: .5s;
+}
+.btn-login:hover{
+    background-color: rgb(245, 162, 9);
+}
+.bottom-or{
+    width: 100%;
+    text-align: center;
+    color: rgb(245, 240, 240);
+    margin: 5px 5px;
+    position: relative;
+}
+.bottom-or span {
+    display:inline-block ;
+    padding: 10px 30px;
+    background-color:plum;
+    position: relative;
+    z-index: 2;
+}
+.bottom-or:after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #999;
+    position: absolute;
+    top :50%;
+    left : 0;
+}

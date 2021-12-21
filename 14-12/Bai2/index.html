@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Đổi màu chữ</title>
+</head>
+<body>
+    <p>Chọn màu chữ</p>
+    <div class="color">
+        <span class="do"  >Đỏ</span>
+        <span class="xanh"  >Xanh</span>
+        <span class="vang"  >Vàng</span>
+        <span class="ghi"  >Ghi</span>
+        <span class="tim" >Tím</span>
+        
+    </div>
+    <p class = "php-text">Lập trình web PHP</p>
+</body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+            $(document).ready(function e() {
+               
+                    $('.do').click(function (e) {
+                        $(".php-text").css("color","red");
+                    });
+
+                    $('.xanh').click(function (e) {
+                        $(".php-text").css("color","blue");
+                    });
+
+                    $('.vang').click(function (e) {
+                        $(".php-text").css("color","yellow");
+                    });
+
+                    $('.ghi').click(function (e) {
+                        $(".php-text").css("color","gray");
+                    });
+                    
+                    $('.tim').click(function (e) {
+                        $(".php-text").css("color","purple");
+                    });
+
+
+                    $('.do').click(function (e) {
+                        $(".php-text").text("Đỏ");
+                    });
+                    $('.xanh').click(function (e) {
+                        $(".php-text").text("Xanh");
+                    });
+                    $('.vang').click(function (e) {
+                        $(".php-text").text("Vàng");
+                    });
+                    
+                    $('.ghi').click(function (e) {
+                        $(".php-text").text("Ghi");
+                    });
+                    $('.tim').click(function (e) {
+                        $(".php-text").text("Tím");
+                    });
+
+                
+            });
+            
+            
+    </script>
+</html>

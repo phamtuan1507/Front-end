@@ -1,0 +1,52 @@
+.logo-navigation {
+    height: 100px;
+    background: rosybrown;
+}
+.logo {
+    float: left;
+}
+.navigation{
+    float: right;
+}
+.header {
+    height: 100px;
+    background: red;
+    text-align: center;
+
+}
+.intro-text {
+    height: 100px;
+    background: chartreuse;
+    text-align: center;
+}
+    
+}
+.box{
+    margin-top: 100px;
+    display: flex;
+    height: 100%;
+
+}
+.box1 {
+    float: left;
+    height: 33%;
+    width: 420px;
+    background: seagreen;
+}
+.box2 {
+    float: left;
+    width: 420px;
+    background: royalblue;
+}
+.box3{
+    float: right;
+    height: 33%;
+    width: 422px;
+    background: rosybrown;
+}
+
+.footer {
+    margin-top: 100px;
+    background: green;
+    height: 100px;
+}

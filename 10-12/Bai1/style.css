@@ -1,0 +1,82 @@
+*{
+    padding: 0px;
+    margin: 0;
+
+}
+
+.div1, .div2 {
+    width: calc(50% - 10px);
+    height: 100px;
+    background: rgb(194, 125, 35);
+    margin: 10px;
+}
+
+.div3 {
+    width: calc(100% - 10px);
+    height: 200px;
+    background:yellow ;
+    margin: 10px;
+    
+}
+.div4, .div5, .div6 {
+    width: calc(100% - 10px);
+    height: 100px;
+    background-color: blue;
+    margin: 10px;
+}
+.div7, .div8, .div9, .div10 {
+    width: calc(100% - 10px);
+    height: 100px;
+    background-color: whitesmoke;
+    margin: 10px;
+}
+.child-1 {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+}
+.child-2 {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.child-3 {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.child-4 {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+@media screen and (max-width: 769px) {
+    .child-1,.child-3, .child-4 {
+       flex-direction: column;
+    }
+    .div1,.div2 {
+        margin-top: 10px;
+    }
+    .div3,.div4,.div5,.div6 {
+        width: 50%;
+        margin-top: 10px;
+    }
+    .div7,.div8,.div9,.div10 {
+        width: 50%;
+        margin-top: 10px;
+    }
+    
+  }
+

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <span class="HTML">HTML</span>
+        <span class="CSS">CSS</span>
+        <span class="JS">JS</span>
+        <span class="PHP">PHP</span>
+        
+    </div>
+    <span class="text">Hello</span>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+       $(document).ready(function(){
+                    $('.HTML').click(function (e) {
+                        $(".text").html("HTML là chữ viết tắt của Hypertext Markup Language.");
+                    });
+
+                    $('.CSS').click(function (e) {
+                        $(".text").html("CSS is the language we use to style an HTML document.");
+                    });
+
+                    $('.JS').click(function (e) {
+                        $(".text").html("JavaScript is the world's most popular programming language.");
+                    });
+
+                    $('.PHP').click(function (e) {
+                        $(".text").html("PHP is a popular general-purpose scripting language that is especially suited to web development.");
+                    });
+       });
+       
+    </script>
+</body>
+</html>

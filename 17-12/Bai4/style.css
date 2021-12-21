@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+span {
+    padding: 10px 20px;
+    border: 1px solid black;
+}
+div {
+    margin: 30px;
+}
+p{
+    font-size :20px;
+}
+.HTML{
+    background-color:purple;
+    color: #fff;
+    cursor: pointer;
+    border: 2px solid black;
+}
+.CSS {
+    cursor: pointer;
+    border: 2px solid black;
+}
+.JS {
+    cursor: pointer;
+    border: 2px solid black;
+}
+.PHP {
+    cursor: pointer;
+    border: 2px solid black;
+}
+

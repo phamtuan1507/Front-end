@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <table border="1">
+        <div class="container">
+            <tr>
+                <input type="text" class="box-calculation" value="">
+                <input type="text" class="box-result" value="">
+            </tr>
+            <tr class="table-1">
+                <td><button class="number">1</button></td>
+                <td><button class="number">2</button></td>
+                <td><button class="number">3</button></td>
+                <td><button class="plus operation">+</button></td>
+            </tr>
+            <tr class="table-1">
+                <td><button class="number">4</button></td>
+                <td><button class="number">5</button></td>
+                <td><button class="number">6</button></td>
+                <td><button class="minus operation">-</button></td>
+            </tr>
+            <tr class="table-1">
+                <td><button class="number">7</button></td>
+                <td><button class="number">8</button></td>
+                <td><button class="number">9</button></td>
+                <td><button class="times operation">*</button></td>
+            </tr>
+            <tr class="table-1">
+                <td><button class="refresh">AC</button></td>
+                <td colspan="2"><button class="equal">=</button></td>
+                <td><button class="divide operation">/</button></td>
+            </tr>
+        </div>
+
+    </table>
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script>
+
+        $('.table-1 button.number').on('click', function () {
+            $char = $(this).html(); // Lấy số vừa click
+            $value_calculation = $('.box-calculation').val(); // Lấy chuỗi giá trị trong ô phép tính
+            $('.box-calculation').val($value_calculation + $char); // Thêm số vừa click vào sau chuỗi giá trị trong ô phép tính
+        });
+
+        $('.table-1 button.refresh').on('click', function () {
+            $('.box-calculation').val(''); // Làm trống ô phép tính
+            $('.box-result').val(''); // Làm trống ô kết quả
+        });
+        
+        $('.table-1 button.operation').on('click', function () {
+            $char = $(this).html(); // Lấy dấu phép toán vừa click
+            $value_calculation = $('.box-calculation').val(); // Lấy chuỗi giá trị trong ô phép tính
+            $('.box-calculation').val($value_calculation + $char); // Thêm dấu phép toán vừa click vào sau chuỗi giá trị trong ô phép tính
+        });
+
+        $('.table-1 button.equal').on('click', function () {
+            $result = $('.box-calculation').val(); // Lấy chuỗi giá trị trong ô phép tính
+            $('.box-result').val(eval($result)); // Hiển thị kết quả trong ô kết quả
+        });
+    </script>
+</body>
+
+</html>

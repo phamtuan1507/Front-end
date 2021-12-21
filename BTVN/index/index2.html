@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style1.css">
+    <title>Linkedln</title>
+</head>
+<body>
+    <div class="wrapper">
+        
+        <div class="form-wrapper" action="">
+            <div class="top-content">
+                <h3>Sign in</h3>
+                <p>Luôn cập nhật về thế giới nghề nghiệp của bạn</p>
+    
+            </div>
+            <div >
+                <input class="form-input" id="form-text" type="text" placeholder="Email or Phone">
+                <p id="result"></p>
+            </div>
+            <div>
+                <input class="form-input" id="form-password" onkeypress="onKeyPass()" type="password" placeholder="Password">
+                <p id="result-password"></p>
+            </div>
+            <div class="form-email">
+                <a href="">Forgot Password?</a>
+            </div>
+            <div class="bottom-button">
+                <button class="btn btn-next" id="btn-click" onclick="onClickSubmit()">Sign in</button>
+            </div>
+            <div class="bottom-or">
+                <span>Hoặc</span> 
+            </div>
+            <div class="bottom-button">
+                <button class="btn btn-login">Sign in with Apple</button>
+            </div>
+            
+        </div>
+       
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        function onClickSubmit () {
+            var input_text = document.getElementById("form-text").value;
+            var result = document.getElementById("result");
+            result.innerHTML = input_text;
+            // console.log(input_text);
+
+            var input_p = document.getElementById("form-password").value;
+            var result_p = document.getElementById("result-password");
+            // result_password.innerHTML = input_password;
+            if (input_p.leght > 6) {
+                result_p.innerHTML = input_p;
+            }else {
+                result_p.innerHTML = " Sai";
+            }
+            // console.log(input_password);
+
+            var regex = /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/;
+            
+            if (regex.test(input_text)){
+                result.innerHTML = " ";
+            }else {
+                result.innerText = " Sai định dạng";
+            }
+
+            
+            
+        }
+       
+
+
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#btn-click").click(function (e){
+                console.log("Đã chạy");
+            });
+
+        });
+    </script>
+</body>
+</html>

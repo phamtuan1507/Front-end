@@ -1,0 +1,121 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+.form{
+  display: flex;
+  height: 400px;
+  width: 25%;
+  flex-direction: column;
+  justify-content: flex-start;
+  border : 1px solid rgba(var(--b6a,219,219,219),1);
+  margin-bottom: 10px;
+}
+.wrapper p {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 40px;
+    font-family: "Lucida Console", "Courier New", monospace;
+    margin-bottom: 20px;
+}
+.div-form{
+    text-align: center;
+    cursor: pointer;
+}
+.div-form-1{
+    text-align: center;
+    color: darkblue;
+    cursor: pointer;
+}
+.form-input {
+    padding: 10px 20px;
+    width: calc(100% - 40%);
+    margin-top: 20px;
+}
+.div-login {
+    padding: 10px 20px;
+    border-radius:4px ;
+    width: calc(100% - 28%);
+    margin-top: 20px;
+    color: whitesmoke;
+    background: rgb(90, 90, 235);;
+}
+.div-or{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 10px;
+    position: relative;
+}
+.div-or span {
+    display:inline-block ;
+    padding: 10px 30px;;
+    background: #fff;
+    position: relative;
+    z-index: 2;
+}
+.div-or:after {
+    content: "";
+    width: 100%;
+    height: 0.5px;
+    background-color: #262626;
+    position: absolute;
+    top :50%;
+    left :0%;
+}
+.div-icon {
+    width: 100%;
+    text-align: center;
+    margin-right: 50px;
+    margin-top: 20px;
+}
+.div-icon i {
+    color: rgb(90, 90, 235);
+}
+.div-icon a {
+    
+    text-decoration: none;
+}
+.div-text {
+    width: 100%;
+    text-align: center;
+    margin-right: 30px;
+    margin-top: 20px;
+}
+.div-text a{
+    text-decoration: none;
+    font-size: 12px;
+}
+.form-footer {
+  height: 50px;
+  width: 25%;
+  border : 1px solid rgba(var(--b6a,219,219,219),1);
+  justify-content: center;
+  text-align: center;
+
+}
+.form-footer a{
+    text-decoration: none;
+    color: rgb(90, 90, 235);
+}
+.div-ungdung{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    font-size: 13px;
+
+}
+.div-img img
+{
+    height: 80px;
+    width: 40px;
+}

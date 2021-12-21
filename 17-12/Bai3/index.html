@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="form-group">
+        <div id=result></div>
+        <div class="calculate">
+            <div class="number">
+                <button class="btn" value="7">7</button>
+                <button class="btn" value="8">8</button>
+                <button class="btn" value="9">9</button>
+                <button class="btn" value="4">4</button>
+                <button class="btn" value="5">5</button>
+                <button class="btn" value="6">6</button>
+                <button class="btn" value="1">1</button>
+                <button class="btn" value="2">2</button>
+                <button class="btn" value="3">3</button>
+                <button class="btn" value="0">0</button>
+                <button class="btn" value=".">.</button>
+            </div>
+            <div class="operation">
+                <button class="btn" onclick="undo()">DEL</button>
+                <button class="btn" onclick="clean()">AC</button>
+                <button class="btn" value="*">*</button>
+                <button class="btn" value="/">/</button>
+                <button class="btn" value="+">+</button>
+                <button class="btn" value="-">-</button>
+                <button class="btn" onclick="equal()">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        const number = document.getElementByClassName('btn');
+        const result = document.getElementsByClassName("result");
+
+        for(let number of numbers) {
+            number.addEventListener("click",function(){
+                result.innerHTML += this.value; 
+            })
+        }
+
+        function equal() {
+            let res = result.innerHTML;
+            let output = eval(res);
+            result.innerHTML = output;
+        }
+
+        function clean() {
+            result.innerHTML = " ";
+        }
+        function undo() {
+            let res = result.innerHTML;
+            result.innerHTML =res.substring(0, res.lenght - 1);
+        }
+    </script>
+</body>
+</html>
